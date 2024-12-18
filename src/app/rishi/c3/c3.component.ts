@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './c3.component.css'
 })
 export class C3Component {
+  backgroundColor: string = 'lightblue';
+  showMessage: boolean = false;
 
+  click() {
+    this.backgroundColor = this.backgroundColor === 'lightblue' ? 'lightcoral': 'lightblue';
+    this.showMessage = !this.showMessage;
+  }
 }

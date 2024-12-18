@@ -1,1 +1,9 @@
-<p>c3 works!</p>
+<div class="container">
+    <h1>Event Handling</h1>
+    <button (click)="click()">Click to toggle color and message</button>
+    <div class="color-box" [style.background-color]="backgroundColor">
+        @if (showMessage) {
+            <h3 class="message-box">The background color has been changed!</h3>
+        }
+    </div>
+</div>
