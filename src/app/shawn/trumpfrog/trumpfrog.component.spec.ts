@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { C5Component } from './c5.component';
+import { TrumpfrogComponent } from './trumpfrog.component';
 
-describe('C5Component', () => {
-  let component: C5Component;
-  let fixture: ComponentFixture<C5Component>;
+describe('TrumpfrogComponent', () => {
+  let component: TrumpfrogComponent;
+  let fixture: ComponentFixture<TrumpfrogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [C5Component]
+      imports: [TrumpfrogComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(C5Component);
+    fixture = TestBed.createComponent(TrumpfrogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
