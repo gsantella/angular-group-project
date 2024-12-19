@@ -1,7 +1,5 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 button {
@@ -19,12 +17,10 @@ button {
     width: 300px;
     height: 200px;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 10px;
     color: white;
     font-size: 18px;
-    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
@@ -33,4 +29,5 @@ button {
     padding: 15px;
     color: white;
     border-radius: 5px;
+    text-align: center;
 }

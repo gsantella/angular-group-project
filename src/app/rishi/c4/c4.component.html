@@ -1,1 +1,23 @@
-<p>c4 works!</p>
+<h1>Currency Exchange Calculator</h1>
+<div class="currency-converter">
+    <div class="form-group">
+        <label for="amount">Amount in USD: </label>
+        <input type="number" id="amount" [(ngModel)]="amountUSD" placeholder="Enter amount in USD" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="currency">Convert to:</label>
+        <select id="currency" [(ngModel)]="selectedCurrency" class="form-control">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="INR">Indian Rupees (INR)</option>
+        </select>
+    </div>
+    <button class="btn btn-primary mt-3" (click)="convertCurrency()">Convert</button>
+
+    <div class="mt-4">
+        @if (convertedAmount > 0) {
+            <h3 class="result">Converted Amount: {{ convertedAmount }} {{ selectedCurrency }}</h3>
+        }
+    </div>
+</div>

@@ -1,1 +1,9 @@
-<p>c5 works!</p>
+<h1>Dynamic Font Size</h1>
+<div class="container">
+    <div class="display-text" [style.fontSize.px]="fontSize">This text changes its size dynamically based on the slider value!</div>
+    <div class="font-control mt-3">
+        <label for="fontSizeInput">Adjust Font Size:</label>
+        <input type="range" id="fontSizeInput" min="10" max="50" [value]="fontSize" (input)="updateFontSize($event)" />
+        <span>{{ fontSize }}px</span>
+    </div>
+</div>
