@@ -1,0 +1,22 @@
+p {
+    animation: 2s infinite alternate color_change;
+    color: greenyellow;
+
+}
+  
+@keyframes slide-in {
+    from {
+      translate: 0.75vw 0;
+      scale: 100% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+@keyframes color_change {
+	from { color: greenyellow; }
+	to { color: black; }
+}
