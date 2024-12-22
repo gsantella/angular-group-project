@@ -1,0 +1,20 @@
+<h1>Tempus-Profile</h1>
+<div style="display:flex;flex-direction: row;">
+    <img style='height:250px;width:250px;'[src]="profileURL" /><br>
+    <button (click)="getApiData()">Get Stats</button>
+    <div style="display:flex;flex-direction: column;">
+    @if(jsonData){
+        <div style="display:flex;flex-direction: row;">
+            <button (click)="class='3'">Soldier</button>
+            <button (click)="class='4'">Demo</button>
+        </div>
+        <div style="display:flex;flex-direction: row;">
+            <h1 style="margin:0px">{{ getClassName(class) }}:--</h1>
+            <p>{{jsonData.player_info.name}}</p>
+        </div>
+        <div style="display:flex;flex-direction: column;">
+            <p>Rank: {{jsonData.class_rank_info[class].title}} {{jsonData.class_rank_info[class].rank}}</p>
+            <p>Total Points: {{jsonData.class_rank_info[class].points}}</p>
+        </div>  
+    }
+</div>
