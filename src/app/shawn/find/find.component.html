@@ -1,0 +1,10 @@
+<hr style="border:14px solid rgb(21, 23, 29);border-radius: 5px;margin:25px 0px 25px 0px">
+<div style="display:flex;flex-direction: row;">
+    <input [(ngModel)]="searchQuery" (input)="search()" placeholder="Enter word to search for...">
+    @if (!searchQuery){
+        <p>Matches:</p>
+    } @else{
+        <p>Matches: {{counter}}</p>
+    } <!-- To return matches back to 0 if nothing is being searched -->
+</div>
+<textarea style='min-height: 250px;'readonly>{{ displayResults }}</textarea>

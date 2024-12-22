@@ -1,0 +1,5 @@
+<div style="display:flex;flex-direction: row;">
+    <input #numberInput placeholder="type number"(keyup.enter)="sort(numberInput.value);numberInput.value = ''">
+    <button (click)="sortedNumbers = []">Clear</button>
+</div>
+<textarea readonly name="" id="">{{sortedNumbers.join(',')}}</textarea>
