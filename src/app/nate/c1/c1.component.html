@@ -1,1 +1,11 @@
-<p>c1 works!</p>
+<div>
+    <h1>Main Component</h1>
+    <div>
+      <canvas #mainCanvas width="500" height="500" style="border:1px solid #000000;"></canvas>
+    </div>
+    <app-nate-c2 [settings]="settings"></app-nate-c2>
+    <app-nate-c3></app-nate-c3>
+    <app-nate-c4></app-nate-c4>
+    <app-nate-c5></app-nate-c5>
+    <app-nate-c6 (settingsChange)="updateSettings($event)"></app-nate-c6>
+  </div>

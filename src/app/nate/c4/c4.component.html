@@ -1,1 +1,17 @@
-<p>c4 works!</p>
+<div>
+    <h2>BMI Calculator with DecimalPipe</h2>
+    <div>
+      <label for="weight">Weight in lbs:</label>
+      <input id="weight" type="number" [(ngModel)]="weight">
+    </div>
+    <div>
+      <label for="heightFeet">Height in feet:</label>
+      <input id="heightFeet" type="number" [(ngModel)]="heightFeet">
+    </div>
+    <div>
+      <label for="heightInches">Height in inches:</label>
+      <input id="heightInches" type="number" [(ngModel)]="heightInches">
+    </div>
+    <button (click)="calculateBMI()">Calculate BMI</button>
+    <p>BMI: {{ formattedBMI }}</p>
+  </div>

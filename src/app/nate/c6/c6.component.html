@@ -1,1 +1,24 @@
-<p>c6 works!</p>
+<div>
+    <h2>Form with Two-Way Data Binding and Validation</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <label for="ballSize">Ball Size:</label>
+      <input id="ballSize" formControlName="ballSize" placeholder="10">
+      <div *ngIf="userForm.get('ballSize')?.invalid && userForm.get('ballSize')?.touched">
+        Ball size is required.
+      </div>
+  
+      <label for="ballAmount">Ball Amount:</label>
+      <input id="ballAmount" formControlName="ballAmount" placeholder="20">
+      <div *ngIf="userForm.get('ballAmount')?.invalid && userForm.get('ballAmount')?.touched">
+        Ball amount is required.
+      </div>
+  
+      <label for="ballSpeed">Ball Speed:</label>
+      <input id="ballSpeed" formControlName="ballSpeed" placeholder="2">
+      <div *ngIf="userForm.get('ballSpeed')?.invalid && userForm.get('ballSpeed')?.touched">
+        Ball speed is required.
+      </div>
+  
+      <button type="submit" [disabled]="userForm.invalid">Submit</button>
+    </form>
+  </div>
