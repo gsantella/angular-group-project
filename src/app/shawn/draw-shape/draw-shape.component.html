@@ -1,0 +1,27 @@
+
+
+<svg [attr.width]="svgWidth" [attr.height]="svgHeight" style="border: 1px solid black;">
+    @if(shape === 'square'){
+        <rect
+            [attr.x]="(svgWidth - size) / 2"
+            [attr.y]="(svgHeight - size) / 2"
+            [attr.width]="size"
+            [attr.height]="size"
+            [attr.fill]="color">
+      </rect>
+    } 
+    @if(shape === 'circle'){
+        <circle  
+            [attr.cx]="100" 
+            [attr.cy]="100" 
+            [attr.r]="size / 2" 
+            [attr.fill]="color">
+        </circle>
+    }
+    @if(shape === 'triangle'){
+        <polygon
+            [attr.points]="getTrianglePoints()"
+            [attr.fill]="color">
+        </polygon>
+    }
+  </svg>
