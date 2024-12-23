@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { C1ComponentZach } from './c1.component';
 
-import { C1Component } from './c1.component';
-
-describe('C1Component', () => {
-  let component: C1Component;
-  let fixture: ComponentFixture<C1Component>;
+describe('C1ComponentZach', () => {
+  let component: C1ComponentZach;
+  let fixture: ComponentFixture<C1ComponentZach>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [C1Component]
+      imports: [C1ComponentZach]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(C1Component);
+    fixture = TestBed.createComponent(C1ComponentZach);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

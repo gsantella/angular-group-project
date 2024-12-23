@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-c2',
-  imports: [],
-  templateUrl: './c2.component.html',
-  styleUrl: './c2.component.css'
+  standalone: true,
+  template: `
+  <div>
+      <h3>C2-Input</h3>
+      <p *ngIf="parentString">{{ parentString }}</p>
+</div>
+  `,
+  styleUrls: ['./c2.component.css']
 })
 export class C2Component {
-
+  @Input() parentString: string = '';
 }
