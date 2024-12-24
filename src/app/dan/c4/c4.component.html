@@ -1,1 +1,8 @@
-<p>c4 works!</p>
+<h1>Kilobytes to Megabytes</h1>
+
+<input #x type="number" [value]="kilobytes" (input)="kilobytes = x.value" placeholder="Enter KB that you want to convert" />
+<h3>Result: {{ megabytes | number: '1.2-2' }} MB</h3>
+<button (click)="conversion()">Press Here To Convert</button>
+
+
+

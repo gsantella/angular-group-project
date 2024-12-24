@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { C6Component } from './c6.component';
 
 describe('C6Component', () => {

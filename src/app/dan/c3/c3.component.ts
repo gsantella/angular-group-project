@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class C3Component {
 
+  power = false
+  powerflow: string = '';
+
+  onClick() {
+    this.power = true
+    this.powerflow = "Flowing"
+  }
+
+  offClick() {
+    this.power = false
+    this.powerflow = "Blocked"
+  }
+
 }

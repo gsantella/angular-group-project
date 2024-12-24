@@ -1,1 +1,12 @@
-<p>c5 works!</p>
+<h1>Add and Subtract Progress Bar</h1>
+
+<div class="pboutline">
+<div class="pb" [style.width]="loading + '%'">
+<span>{{ loading }}</span>
+</div>
+</div>
+
+<br>
+
+<button (click)="increaseLoading()">IncreaseLoading</button>
+<button (click)="decreaseLoading()">DecreaseLoading</button>

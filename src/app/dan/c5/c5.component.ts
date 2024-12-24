@@ -8,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class C5Component {
 
+  loading: number = 0
+
+  increaseLoading() {
+    if (this.loading < 100) {
+      this.loading += 5;
+    }
+  }
+
+  decreaseLoading() {
+    if (this.loading > 0) {
+      this.loading -= 5;
+    }
+  }
+
 }
