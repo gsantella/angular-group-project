@@ -13,5 +13,5 @@
       <input id="heightInches" type="number" [(ngModel)]="heightInches">
     </div>
     <button (click)="calculateBMI()">Calculate BMI</button>
-    <p>BMI: {{ formattedBMI }}</p>
+    <p>BMI: {{  bmi | number:'1.2-2' }}</p>
   </div>

@@ -27,7 +27,9 @@ export class C4ComponentNate {
     }
   }
 
+  /* Computed property; using direct pipeline on template instead
   get formattedBMI() {
     return this.decimalPipe.transform(this.bmi, '1.2-2');
   }
+    */
 }
