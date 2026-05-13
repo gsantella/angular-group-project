@@ -14,7 +14,7 @@ export class NumberSortComponent {
   total = 0
   sort(value:string){
     const number = parseFloat(value)
-    if(number){
+    if(number && !this.sortedNumbers.includes(number)) {
       this.total += number
       let lp = 0
       let hp = this.sortedNumbers.length
